@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype.svg"
+        width="102" height="84"
+        alt="Городок Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a  href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--current">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Форма отзыва</h1>
+      <p>Оставьте свой отзыв</p>
+      <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form action=" https://echo.htmlacademy.ru">
+        <fieldset class="personal-data">
+          <legend>Представьтесь</legend>
+          <label>
+            Имя*:
+            <input type="text" name="name" required>
+            </label>
+          <label>
+            Фамилия*:
+            <input type="text" name="surname" required>
+          </label>
+          <label>
+            Отчество:
+            <input type="text" name="patronymic">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Контактная информация:</legend>
+          <label>
+            Контактный телефон*:
+          <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+          </label>
+        </fieldset>
+        <fieldset class="impression">
+          <legend>Ваше общее впечатление</legend>
+          <label>
+            <input type="radio" name="impression" value="positive" checked>
+            Скорее положительное
+          </label>
+          <label>
+            <input type="radio" name="impression" value="negative">
+            Скорее отрицательное
+          </label>
+          <label>
+            <input type="radio" name="impression" value="neutral">
+            Затрудняюсь ответить
+          </label>
+        </fieldset>
+        <fieldset></fieldset>
+        <fieldset></fieldset>
+        <fieldset></fieldset>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__hashtag">
+          <p>#visitsedona</p>
+        </div>
+        <div class="page-footer__social">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a href="https://twitter.com" alt="Мы в твиттере">
+                <img src="img/icon-twitter.svg">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://www.facebook.com" alt="Мы в фейсбуке">
+                <img src="img/icon-facebook.svg">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="https://www.youtube.com" alt="Мы в ютубе">
+                <img src="img/icon-youtube.svg">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">Разработано
+          <img src="img/htmlacademy.svg" alt="HTML Academy">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
