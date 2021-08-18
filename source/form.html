@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
         alt="Городок Седона">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--off" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -43,80 +43,100 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Форма отзыва</h1>
-      <p>Оставьте свой отзыв</p>
+      <h2>Оставьте свой отзыв</h2> <!-- в версии для планшета и десктопа этот заголовок больше по размеру, сейчас необходимо задвать доп класс, либо т.к. сказано верстать только для мобильной версии, то не трогать, а в дальнейшем уже добавить условия?-->
       <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <form action=" https://echo.htmlacademy.ru">
-        <fieldset class="personal-data">
-          <legend>Представьтесь</legend>
-          <label>
+      <form class="review" action=" https://echo.htmlacademy.ru">
+        <fieldset class="review__personal-data">
+          <legend class="review__heading">Представьтесь</legend>
+          <label class="review__label">
             Имя*:
-            <input type="text" name="name" required>
+            <input class="review__input" type="text" name="name" required placeholder="Петр">
             </label>
-          <label>
+          <label class="review__label">
             Фамилия*:
-            <input type="text" name="surname" required>
+            <input class="review__input" type="text" name="surname" required placeholder="Иванов">
           </label>
-          <label>
+          <label class="review__label">
             Отчество:
-            <input type="text" name="patronymic">
+            <input class="review__input" type="text" name="patronymic" placeholder="Александрович">
           </label>
         </fieldset>
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <label>
+        <fieldset class="review__personal-data">
+          <legend  class="review__heading">Контактная информация:</legend>
+          <label class="review__label">
             Контактный телефон*:
-          <input type="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required>
+          <input class="review__input" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" required value="Введите телефон">
+          </label>
+          <label class="review__label">
+            Электронная почта*:
+          <input class="review__input" type="email" name="mail" required value="Введите e-mail">
           </label>
         </fieldset>
-        <fieldset class="impression">
-          <legend>Ваше общее впечатление</legend>
-          <label>
-            <input type="radio" name="impression" value="positive" checked>
+        <fieldset class="review__impression">
+          <legend  class="review__heading">Ваше общее впечатление</legend>
+          <label class="review__label">
+            <input class="review__input" type="radio" name="impression" value="positive" checked>
             Скорее положительное
           </label>
-          <label>
-            <input type="radio" name="impression" value="negative">
+          <label class="review__label">
+            <input class="review__input" type="radio" name="impression" value="negative">
             Скорее отрицательное
           </label>
-          <label>
-            <input type="radio" name="impression" value="neutral">
+          <label class="review__label">
+            <input class="review__input" type="radio" name="impression" value="neutral">
             Затрудняюсь ответить
           </label>
         </fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
-        <fieldset></fieldset>
+        <fieldset class="review__lions">
+          <legend class="review__heading">Посещённые достопримечательности:</legend>
+          <label class="review__label">
+            <input class="review__input" type="checkbox" name="bridge" checked>
+            Мост Дьявола
+          </label>
+          <label class="review__label">
+            <input class="review__input" type="checkbox" name="mount" checked>
+            Гора-Колокол
+          </label>
+          <label class="review__label">
+            <input class="review__input" type="checkbox" name="park" checked>
+            Слайд-парк
+          </label>
+          <label class="review__label">
+            <input class="review__input" type="checkbox" name="rocks">
+            Красные скалы
+          </label>
+        </fieldset>
+        <fieldset class="review__emotions">
+          <legend class="review__heading review__heading__emotions">Опишите свои эмоции:</legend>
+          <textarea class="review__textarea" name="comment">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <button class="button review__button" type="submit">Отправить отзыв</button>
+        <span class="review__required-fields">* — обязательные поля</span>
       </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__hashtag">
-          <p>#visitsedona</p>
-        </div>
-        <div class="page-footer__social">
-          <ul class="social-links__list">
-            <li class="social-links__item">
-              <a href="https://twitter.com" alt="Мы в твиттере">
-                <img src="img/icon-twitter.svg">
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a href="https://www.facebook.com" alt="Мы в фейсбуке">
-                <img src="img/icon-facebook.svg">
-              </a>
-            </li>
-            <li class="social-links__item">
-              <a href="https://www.youtube.com" alt="Мы в ютубе">
-                <img src="img/icon-youtube.svg">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">Разработано
-          <img src="img/htmlacademy.svg" alt="HTML Academy">
-        </div>
-      </div>
-    </footer>
-  </body>
+      <p>#visitsedona</p>
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a href="https://twitter.com">
+            <img src="img/icon-twitter.svg" alt="Мы в твиттере">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="https://www.facebook.com">
+            <img src="img/icon-facebook.svg" alt="Мы в фейсбуке">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="https://www.youtube.com">
+            <img src="img/icon-youtube.svg" alt="Мы в ютубе">
+          </a>
+        </li>
+      </ul>
+    <div class="page-footer__copyright">
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+      <img src="img/htmlacademy.svg" alt="HTML Academy"></a>
+    </div>
+</footer>
+</body>
 </html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype.svg"
+        width="102" height="84"
+        alt="Городок Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a  href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--current">
+              <a>
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a  href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visualy-hidden">Галерея</h1>
+      <h2>Фото и видео</h2>
+      <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+      <section class="page-main__photo-gallery">
+        <figure class="photo photo--full">
+          <a class="photo__link" href="#">
+            <img class="photo__image" src="img/native-spaces.jpg" alt="Фото с дорогой">
+          </a>
+          <figcaption>Неродные просторы</figcaption>
+          <p class="photo__author">Автор фото: Борис</p>
+          <button class="button-like" type="button">
+            <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like-counter">1350</span>
+        </figure>
+        <figure class="photo">
+          <a class="photo__link" href="#">
+            <img class="photo__image" src="img/native-plant.jpg" alt="Фото местного растения">
+          </a>
+          <figcaption>Местная растительность</figcaption>
+          <p class="photo__author">Автор фото: Сергей</p>
+          <button class="button-like" type="button">
+            <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like-counter">143</span>
+        </figure>
+        <figure class="photo">
+          <a class="photo__link" href="#">
+            <img class="photo__image" src="img/road-north.jpg" alt="Фото с дорогой">
+          </a>
+          <figcaption>Дорога на север</figcaption>
+          <p class="photo__author">Автор фото: Петр</p>
+          <button class="button-like" type="button">
+            <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like-counter">96</span>
+        </figure>
+        <figure class="photo">
+          <a class="photo__link" href="#">
+            <img class="photo__image" src="img/devil's-bridge.jpg" alt="Фото со скалами">
+          </a>
+          <figcaption>Мост дьявола</figcaption>
+          <p class="photo__author">Автор фото: Антон</p>
+          <button class="button-like" type="button">
+            <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
+            <span class="visually-hidden">Нравится!</span>
+          </button>
+          <span class="photo__like-counter">254</span>
+        </figure>
+      </section>
+      <section class="video-gallery">
+        <h2>Все еще сомневаетесь?</h2>
+        <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video src="#" width="320" height="201" controls="controls" poster="img/picture-for-video.jpg"></video>
+      </section>
+    </main>
+    <footer class="page-main__page-footer">
+      <p>#visitsedona</p>
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a href="https://twitter.com">
+            <img src="img/icon-twitter.svg" alt="Мы в твиттере">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="https://www.facebook.com">
+            <img src="img/icon-facebook.svg" alt="Мы в фейсбуке">
+          </a>
+        </li>
+        <li class="social-links__item">
+          <a href="https://www.youtube.com">
+            <img src="img/icon-youtube.svg" alt="Мы в ютубе">
+          </a>
+        </li>
+      </ul>
+    <div class="page-footer__copyright">
+      <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
+      <img src="img/htmlacademy.svg" alt="HTML Academy"></a>
+    </div>
+</footer>
+</body>
+</html>
