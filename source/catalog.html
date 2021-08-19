@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img src="img/logotype.svg"
         width="102" height="84"
         alt="Городок Седона">
@@ -44,11 +44,12 @@
       <h2>Фото и видео</h2>
       <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
       <section class="page-main__photo-gallery">
+        <h2 class="visually-hidden">Фотографии местности и достопримечательностей</h2>
         <figure class="photo photo--full">
           <a class="photo__link" href="#">
             <img class="photo__image" src="img/native-spaces.jpg" alt="Фото с дорогой">
           </a>
-          <figcaption>Неродные просторы</figcaption>
+          <p>Неродные просторы</p>
           <p class="photo__author">Автор фото: Борис</p>
           <button class="button-like" type="button">
             <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
@@ -60,7 +61,7 @@
           <a class="photo__link" href="#">
             <img class="photo__image" src="img/native-plant.jpg" alt="Фото местного растения">
           </a>
-          <figcaption>Местная растительность</figcaption>
+          <p>Местная растительность</p>
           <p class="photo__author">Автор фото: Сергей</p>
           <button class="button-like" type="button">
             <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
@@ -72,7 +73,7 @@
           <a class="photo__link" href="#">
             <img class="photo__image" src="img/road-north.jpg" alt="Фото с дорогой">
           </a>
-          <figcaption>Дорога на север</figcaption>
+          <p>Дорога на север</p>
           <p class="photo__author">Автор фото: Петр</p>
           <button class="button-like" type="button">
             <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
@@ -84,7 +85,7 @@
           <a class="photo__link" href="#">
             <img class="photo__image" src="img/devil's-bridge.jpg" alt="Фото со скалами">
           </a>
-          <figcaption>Мост дьявола</figcaption>
+          <p>Мост дьявола</p>
           <p class="photo__author">Автор фото: Антон</p>
           <button class="button-like" type="button">
             <img src="img/like-icon.svg" class="button-like__icon" width="22" height="20" alt="Нравится">
@@ -96,10 +97,22 @@
       <section class="video-gallery">
         <h2>Все еще сомневаетесь?</h2>
         <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video src="#" width="320" height="201" controls="controls" poster="img/picture-for-video.jpg"></video>
+        <div class="video-control">
+          <img src="img/picture-for-video.jpg" alt="Видеопрезентация">
+          <div class="video-control__slider"></div>
+          <button class="video-control__replay" type="button" aria-label="Повторить">
+            <img src="img/repeat.svg" width="16" height="20" alt="Повтор">
+          </button>
+          <button class="video-control__subtitles" type="button" aria-label="Включить субтитры">
+            <img src="img/subtitles.svg" width="32" height="20" alt="Субтитры">
+          </button>
+          <button class="video-control__fullscreen" type="button" aria-label="Открыть на полный экран">
+            <img src="img/fullscreen.svg" width="20" height="20" alt="Во весь экран">
+          </button>
+        </div>
       </section>
     </main>
-    <footer class="page-main__page-footer">
+    <footer class="page-footer">
       <p>#visitsedona</p>
       <ul class="social-links">
         <li class="social-links__item">
@@ -118,10 +131,9 @@
           </a>
         </li>
       </ul>
-    <div class="page-footer__copyright">
       <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">Разработано
       <img src="img/htmlacademy.svg" alt="HTML Academy"></a>
-    </div>
 </footer>
 </body>
 </html>
+
